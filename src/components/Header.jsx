@@ -1,11 +1,11 @@
 import { AppBar, Toolbar, Typography, Box } from "@mui/material";
-import ReactLogo from "../assets/logo192.png"
+import reactLogo from "../assets/react.png"
 
 export default function Header() {
   return (
     <AppBar>
       <Toolbar>
-      <img className="logo" src={ReactLogo} alt="React logo"/>
+      <img className="logo" src={reactLogo} alt="React logo"/>
       <div className="headerTitle">
         <Box sx={{display:"flex", margin:" 0px 20px"}}>
         <Typography variant="h4" sx={{fontFamily:"Helvetica Neue"}}>Moto</Typography>
