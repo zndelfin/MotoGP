@@ -1,12 +1,18 @@
-import './App.css';
-import Header from "./components/Header"
+import "./App.css";
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import { Container } from "@mui/system";
+import ActionBar from "./components/ActionBar";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <Container className="container">
       <Header />
-    </div>
+      <div className="content">
+        <Menu />
+        <ActionBar />
+      </div>
+    </Container>
   );
 }
 
-export default App;

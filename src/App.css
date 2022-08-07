@@ -1,12 +1,27 @@
-.App{
-  margin: 0;
-  padding: 0;
-}
-
+/* HEADER */
 .logo{
   width: 50px;
 }
 
-.headerTitle{
-  font-family: "Times New Roman";
+.container {
+  background-color:bisque;
+  width: 90%;
+}
+
+/* APP */
+.content{
+  margin-top: 100px;
+  display: flex;
+}
+
+/* MENU */
+.btn-label{
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* ACTION BAR */
+.actionItems{
+  padding:5px;
 }
