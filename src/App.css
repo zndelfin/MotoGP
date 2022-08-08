@@ -4,7 +4,6 @@
 }
 
 .container {
-  background-color:bisque;
   width: 90%;
 }
 
@@ -21,10 +20,6 @@
   text-transform: none;
 }
 
-/* ACTION BAR */
-.actionItems{
-  padding:5px;
-}
 
 
 /* THIS IS A TEST TO ADD IF NOW USING MASTER BRANCH */

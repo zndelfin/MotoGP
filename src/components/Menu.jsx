@@ -3,7 +3,7 @@ import { Stack, Button, ButtonGroup, Box, Typography } from "@mui/material";
 
 export default function Menu() {
   return (
-    <Box className="menuText">
+    <Box>
       <Stack>
       <Stack><Typography sx={{padding:"10px 0"}}>MENU</Typography></Stack>
         <ButtonGroup 

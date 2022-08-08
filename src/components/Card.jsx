@@ -1,26 +1,46 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { Box } from "@mui/system";
 
-export default function MediaCard() {
+export default function MediaCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Box sx={{ marginTop: "20px", marginBottom: "20px", width:"550px"}}>
+    <Card sx={{ backgroundColor: "#F9F9F9"}}>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {props.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {props.team}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      <Box sx={{ color: "black"}}>
+          <Button
+            sx={{
+              width: "50%",
+              color: "black",
+              textTransform: "none",
+              border: "solid 1px #DCDCDC",
+            }}
+          >
+            Delete
+          </Button>
+
+          <Button
+            sx={{
+              width: "50%",
+              color: "black",
+              textTransform: "none",
+              border: "solid 1px #DCDCDC",
+            }}
+          >
+            Edit
+          </Button>
+        </Box>
     </Card>
+    </Box>
   );
 }
